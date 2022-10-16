@@ -92,6 +92,7 @@ int lingkaran()
 }
 //fungsi keliling dan luas bangun datar selesai
 
+//fungsi deret dan baris
 int deret_baris() {
     int nilai_n , nilai_a, beda, hasil, jumlah_suku;
     float a = 0.5;
@@ -113,8 +114,26 @@ int deret_baris() {
     
     return 0;
 }
+//fungsi deret selesai
 
-//fungsi untuk memanggil 
+//fungsi peluang mulai
+int peluang()
+{
+    float n_a, n_s, peluang;
+
+    printf("masukkan peluang kejadian yang diharapkan: ");
+    scanf("%f", &n_a);
+    printf("masukkan banyak percobaan yang dilakukan: ");
+    scanf("%f", &n_s);
+
+    peluang = n_a / n_s;
+
+    printf("jadi peluang terjadinya kejadian tersebut adalah %.2f ", peluang);
+    return 0;
+}
+//fungsi peluang selesai
+
+
 int keliling_luas()
 {
     int input = 0;
@@ -153,6 +172,7 @@ int keliling_luas()
     }
 }
 
+//fungsi untuk memanggil 
 int main ()
 {
     int input = 0;
@@ -187,7 +207,7 @@ int main ()
     kecepatan();
     break;
     case 4 :
-    
+    peluang();
     break;
     }
 
