@@ -170,7 +170,6 @@ int keliling_luas()
     printf("= ");
     scanf("%d", &input);
     scanf("%d", &input);
-    while ((input = getchar()) != '\n' && input != EOF);
     system("clear"); //untuk membersihkan tampilan output sebelumnya
 
     switch(input){
@@ -197,7 +196,6 @@ int main ()
 {
     int input = 0;
 
-
     printf("\n\t----------------------------------------------------");
     printf("\n\t||   Program Gabungan Algoritma Pemrograman       ||");
     printf("\n\t----------------------------------------------------");
@@ -209,7 +207,6 @@ int main ()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
-    while ((input = getchar()) != '\n' && input != EOF);
     system("clear");
     
     switch(input){
@@ -224,9 +221,6 @@ int main ()
     break;
     case 4 :
     peluang();
-    break;
-    default:
-    main();
     break;
     }
 
