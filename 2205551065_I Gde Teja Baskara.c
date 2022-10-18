@@ -188,6 +188,7 @@ int keliling_luas()
     keliling_luas();
     break;
     }
+return 0;
 }
 
 //fungsi untuk memanggil 
