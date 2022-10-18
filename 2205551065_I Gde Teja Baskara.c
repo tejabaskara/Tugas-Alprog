@@ -6,6 +6,9 @@ int kecepatan()
 {
     float kecepatan, jarak, waktu;
 
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                   KECEPATAN                    ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("selamat datang pada penghitungan kecepatan\n");
     printf("masukkan waktu perjalanan: ");
     scanf("%f", &waktu);
@@ -24,6 +27,9 @@ int persegi()
 {
     int sisi, luas, keliling;
     
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                     PERSEGI                    ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("selamat datang pada penghitungan luas dan keliling persegi\n");
     printf("masukkan sisi persegi: ");
     scanf("%i", &sisi);
@@ -40,6 +46,9 @@ int persegi_panjang()
 {
     int panjang, lebar, luas, keliling;
 
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                  PERSEGI PANJANG               ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("\nselamat datang di perhitungan luas dan keliling persegi panjang\n");
     printf("masukkan panjang persegi: ");
     scanf("%d", &panjang);
@@ -57,6 +66,9 @@ int segitiga()
 {
     int alas, tinggi, sisi_1, sisi_2, luas, keliling;
 
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                   SEGITIGA                     ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("\nselamat datang di perhitungan luas dan keliling persegi panjang\n");
     printf("masukkan alas segitiga: ");
     scanf("%d", &alas);
@@ -79,6 +91,9 @@ int lingkaran()
     int jari_jari; 
     float luas, keliling;
 
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                   LINGKARAN                    ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("\nselamat datang di perhitungan luas dan keliling persegi panjang\n");
     printf("masukkan alas jari-jari lingkaran: ");
     scanf("%d", &jari_jari);
@@ -97,6 +112,9 @@ int deret_baris() {
     int nilai_n , nilai_a, beda, hasil, jumlah_suku;
     float a = 0.5;
     
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                 BARIS DAN DERET                ||");
+    printf("\n\t----------------------------------------------------");
     printf("selamat datang pada penghitungan baris aritmatika\n");
     printf("masukkan nilai suku pertama : ");
     scanf("%i", &nilai_a);
@@ -110,7 +128,6 @@ int deret_baris() {
     
     printf("\nnilai dari suku ke-%i adalah %i ", nilai_n, hasil);
     printf("\njumlah dari suku ke-%i adalah %i", nilai_n, jumlah_suku);
-    printf("\nTerimakasih telah mencoba");
     
     return 0;
 }
@@ -121,6 +138,9 @@ int peluang()
 {
     float n_a, n_s, peluang;
 
+    printf("\n\t----------------------------------------------------");
+    printf("\n\t||                PELUANG                         ||");
+    printf("\n\t----------------------------------------------------\n");
     printf("masukkan peluang kejadian yang diharapkan: ");
     scanf("%f", &n_a);
     printf("masukkan banyak percobaan yang dilakukan: ");
@@ -149,13 +169,10 @@ int keliling_luas()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
+    scanf("%d", &input);
+    while ((input = getchar()) != '\n' && input != EOF);
     system("clear"); //untuk membersihkan tampilan output sebelumnya
 
-    if (input < 1 || input > 4){ //untuk memvalidasi nilai yang dimasukkan
-        printf("\nsilahkan coba lagi\n");
-        keliling_luas();
-    }
-    
     switch(input){
     case 1 :
     persegi();
@@ -168,6 +185,9 @@ int keliling_luas()
     break;
     case 4 :
     lingkaran();
+    break;
+    default:
+    keliling_luas();
     break;
     }
 }
@@ -189,13 +209,9 @@ int main ()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
+    while ((input = getchar()) != '\n' && input != EOF);
     system("clear");
-
-    if (input < 1 || input > 5){
-        printf("\nsilahkan coba lagi\n");
-        main();
-    }
-
+    
     switch(input){
     case 1 :
     keliling_luas();
@@ -208,6 +224,9 @@ int main ()
     break;
     case 4 :
     peluang();
+    break;
+    default:
+    main();
     break;
     }
 
