@@ -9,15 +9,14 @@ int kecepatan()
     printf("\n\t----------------------------------------------------");
     printf("\n\t||                   KECEPATAN                    ||");
     printf("\n\t----------------------------------------------------\n");
-    printf("selamat datang pada penghitungan kecepatan\n");
-    printf("masukkan waktu perjalanan: ");
+    printf("masukkan waktu perjalanan (s): ");
     scanf("%f", &waktu);
-    printf("masukkan jarak perjalanan: ");
+    printf("masukkan jarak perjalanan (m): ");
     scanf("%f", &jarak);
     
     kecepatan = jarak /  waktu;
     
-    printf("\nluas dari persegi adalah : %.2f", kecepatan);
+    printf("\nkecepatannya adalah : %.2f m/s", kecepatan);
 return 0;
 }
 //fungsi kecepatan selesai
@@ -114,7 +113,7 @@ int deret_baris() {
     
     printf("\n\t----------------------------------------------------");
     printf("\n\t||                 BARIS DAN DERET                ||");
-    printf("\n\t----------------------------------------------------");
+    printf("\n\t----------------------------------------------------\n");
     printf("selamat datang pada penghitungan baris aritmatika\n");
     printf("masukkan nilai suku pertama : ");
     scanf("%i", &nilai_a);
@@ -188,6 +187,7 @@ int keliling_luas()
     keliling_luas();
     break;
     }
+return 0;
 }
 
 //fungsi untuk memanggil 
@@ -206,6 +206,7 @@ int main ()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
+    system("clear");
 
     switch(input){
     case 1 :
