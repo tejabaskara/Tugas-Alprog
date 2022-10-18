@@ -169,7 +169,6 @@ int keliling_luas()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
-    scanf("%d", &input);
     system("clear"); //untuk membersihkan tampilan output sebelumnya
 
     switch(input){
@@ -207,8 +206,7 @@ int main ()
     printf("----------------------------------------------------\n");
     printf("= ");
     scanf("%d", &input);
-    system("clear");
-    
+
     switch(input){
     case 1 :
     keliling_luas();
@@ -221,6 +219,9 @@ int main ()
     break;
     case 4 :
     peluang();
+    break;
+    default:
+    main();
     break;
     }
 
