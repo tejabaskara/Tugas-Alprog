@@ -4,6 +4,8 @@
 #define JATUH_TEMPO 25
 #define DENDA_TEMPO 25000
 
+FILE *file;
+
 void outro()
 {
     printf("\t|============================================|\n");
@@ -26,6 +28,15 @@ int D1_1()
     hari = local->tm_mday;
     bulan = local->tm_mon + 1;
     tahun = local->tm_year + 1900;
+
+    int angka = 10;
+    file = fopen("struk hasil.txt", "a");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
 
     char name[50];
     printf("|================================================|\n");
@@ -127,6 +138,16 @@ int D1_1()
     {
         outro();
     }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D1-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
