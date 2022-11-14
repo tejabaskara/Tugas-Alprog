@@ -30,13 +30,9 @@ int D1_1()
     tahun = local->tm_year + 1900;
 
     int angka = 10;
-    file = fopen("struk hasil.txt", "a");
+    
 
-    if (file == NULL)
-    {
-        printf("error");
-        exit(1);
-    }
+    
 
     char name[50];
     printf("|================================================|\n");
@@ -137,6 +133,14 @@ int D1_1()
     else
     {
         outro();
+    }
+    
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
     }
 
     fprintf(file, "|================================================|\n");
@@ -264,6 +268,24 @@ int D1_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D1-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -380,6 +402,24 @@ int D1_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D1-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -496,6 +536,24 @@ int D1_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D1-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -612,6 +670,24 @@ int D2_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D2-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -728,6 +804,24 @@ int D2_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D2-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -844,6 +938,24 @@ int D2_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D2-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -960,6 +1072,24 @@ int D2_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D2-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1076,6 +1206,24 @@ int D3_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D3-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1192,6 +1340,24 @@ int D3_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D3-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1308,6 +1474,24 @@ int D3_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D3-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1424,6 +1608,24 @@ int D3_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D3-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1540,6 +1742,24 @@ int D4_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D4-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1656,6 +1876,24 @@ int D4_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D4-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1772,6 +2010,24 @@ int D4_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D4-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -1888,6 +2144,24 @@ int D4_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D4-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2004,6 +2278,24 @@ int D5_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D5-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2120,6 +2412,24 @@ int D5_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D5-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2236,6 +2546,24 @@ int D5_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D5-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2352,6 +2680,24 @@ int D5_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: D5-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2468,6 +2814,24 @@ int E1_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E1-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2584,6 +2948,23 @@ int E1_2()
     {
         outro();
     }
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E1-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2700,6 +3081,24 @@ int E1_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E1-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2816,6 +3215,24 @@ int E1_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E1-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -2932,6 +3349,24 @@ int E2_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E2-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3048,6 +3483,24 @@ int E2_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E2-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3164,6 +3617,24 @@ int E2_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E2-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3280,6 +3751,24 @@ int E2_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E2-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3396,6 +3885,24 @@ int E3_1()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E3-1\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3512,6 +4019,24 @@ int E3_2()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E3-2\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3628,6 +4153,24 @@ int E3_3()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E3-3\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
@@ -3744,6 +4287,24 @@ int E3_4()
     {
         outro();
     }
+
+    file = fopen("struk hasil.txt", "w");
+
+    if (file == NULL)
+    {
+        printf("error");
+        exit(1);
+    }
+
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|               Hasil Dari Perhitungan           |\n");
+    fprintf(file, "|================================================|\n");
+    fprintf(file, "|Nama: %s", name);
+    fprintf(file, "|Kelompok: E3-4\n");
+    fprintf(file, "|Tanggal: %02d-%02d-%d\n", hari, bulan, tahun);
+    fprintf(file, "|Nominal Hasil: Rp %d,- ", hasil);
+    fclose(file);
+
     return 0;
 }
 
